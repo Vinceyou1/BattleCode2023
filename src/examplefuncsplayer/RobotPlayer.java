@@ -112,7 +112,7 @@ public strictfp class RobotPlayer {
      */
     static void runHeadquarters(RobotController rc) throws GameActionException {
         // Pick a direction to build in.
-        Direction dir = directions[rng.nextInt(directions.length)];
+        Direction dir = directions[0];
         MapLocation newLoc = rc.getLocation().add(dir);
         if (rc.canBuildAnchor(Anchor.STANDARD)) {
             // If we can build an anchor do it!
