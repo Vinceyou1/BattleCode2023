@@ -117,4 +117,10 @@ public strictfp class RobotPlayer {
         }
     }
 
+    public static MapLocation getCenter(RobotController rc){
+        int width = rc.getMapWidth();
+        int height = rc.getMapHeight();
+        return new MapLocation(width/2, height/2);
+    }
+
 }
